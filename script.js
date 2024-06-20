@@ -204,7 +204,7 @@ function supportRenderTextureFormat (gl, internalFormat, format, type) {
     let status = gl.checkFramebufferStatus(gl.FRAMEBUFFER);
     return status == gl.FRAMEBUFFER_COMPLETE;
 }
-
+/*
 function startGUI () {
     var gui = new dat.GUI({ width: 300 });
     gui.add(config, 'DYE_RESOLUTION', { 'high': 1024, 'medium': 512, 'low': 256, 'very low': 128 }).name('quality').onFinishChange(initFramebuffers);
@@ -279,7 +279,7 @@ function startGUI () {
     if (isMobile())
         gui.close();
 }
-
+*/
 function isMobile () {
     return /Mobi|Android/i.test(navigator.userAgent);
 }
